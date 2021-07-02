@@ -28,7 +28,7 @@ section.data:
 ; db — allocate 8 bits (BYTE[ptr]), register 'al'
 ; 0xa — 0xd=10, also known as line feed (LF)
 ; 0xa — 0xd=13, also known as carriage return (CR)
-msg db 'Hello, nasm!', 0xa
+msg db 'Hello, nasm!', 0xA
 
 ; EQU defines a symbol to a given constant value:
 ; when EQU is used, the source line must contain a label.
