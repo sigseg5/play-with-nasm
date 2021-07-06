@@ -1,9 +1,9 @@
 #!/bin/bash
 fileasm=$(ls *.asm)
-nasm -f elf $fileasm
+nasm -f elf64 $fileasm
 file=${fileasm//.asm/}
 fileo=$(ls *.o)
-ld -m elf_i386 -s -o $file $fileo
+ld -m elf_x86_64 -s -o $file $fileo
 rm $fileo
 ./$file
 rm $file
